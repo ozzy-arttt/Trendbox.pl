@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrendBox - Twoje trendy w jednym miejscu</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #ff6b6b, #f06595);
+      color: white;
+      text-align: center;
+      padding: 2em 1em;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background: white;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 1em 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #ff6b6b;
+    }
+    section {
+      max-width: 1100px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5em;
+    }
+    .product {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s ease-in-out;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product h3 {
+      margin: 0.5em 0;
+    }
+    .product p {
+      color: #777;
+    }
+    .product button {
+      background: #ff6b6b;
+      border: none;
+      color: white;
+      padding: 0.8em 1.5em;
+      margin-bottom: 1em;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .product button:hover {
+      background: #f06595;
+    }
+    footer {
+      text-align: center;
+      padding: 2em;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TrendBox</h1>
+    <p>Akcesoria, gadżety i produkty codziennego użytku — zawsze na topie!</p>
+  </header>
+  <nav>
+    <a href="#nowosci">Nowości</a>
+    <a href="#bestsellery">Bestsellery</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+  <section id="nowosci">
+    <h2>✨ Nowości</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1606813902917-59e3b4b9b9f0" alt="Smart kubek">
+        <h3>Smart Kubek LED</h3>
+        <p>Elegancki kubek z wyświetlaczem temperatury.</p>
+        <button>Dodaj do koszyka</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1585386959984-a41552231693" alt="Bezprzewodowe słuchawki">
+        <h3>Bezprzewodowe słuchawki AirVibe</h3>
+        <p>Jakość dźwięku premium w kompaktowej formie.</p>
+        <button>Dodaj do koszyka</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1606813902941-10b1f8f0f515" alt="Organizer biurkowy">
+        <h3>Organizer biurkowy WoodStyle</h3>
+        <p>Stylowy i praktyczny dodatek do biura.</p>
+        <button>Dodaj do koszyka</button>
+      </div>
+    </div>
+  </section>
+  <section id="bestsellery">
+    <h2>🔥 Bestsellery</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1616627989823-81a1c7ddc06c" alt="Lampka nocna RGB">
+        <h3>Lampka nocna RGB</h3>
+        <p>Stwórz klimat w każdym pomieszczeniu.</p>
+        <button>Dodaj do koszyka</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1574738073603-3f36c7b7a4d1" alt="Termos podróżny">
+        <h3>Termos podróżny SteelPro</h3>
+        <p>Utrzymuje ciepło przez 12 godzin — idealny w trasie.</p>
+        <button>Dodaj do koszyka</button>
+      </div>
+    </div>
+  </section>
+  <footer id="kontakt">
+    <p>📩 Kontakt: <a href="mailto:trendbox@kontakt.pl">trendbox@kontakt.pl</a></p>
+    <p>© 2025 TrendBox. Wszystkie prawa zastrzeżone.</p>
+  </footer>
+</body>
+</html>
